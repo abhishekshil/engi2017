@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="272dp"
+    android:padding="5dp"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff"
+            >
+
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="200dp"
+             android:padding="3dp"
+             android:id="@+id/image_event"
+             android:scaleType="fitXY"
+             android:src="@drawable/doremipa"
+             />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dance"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/event_name"
+        />
+
+        </LinearLayout>
+        <!--<android.support.design.widget.FloatingActionButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginBottom="30dp"-->
+            <!--app:backgroundTint="#002794"-->
+            <!--/>-->
+    </android.support.v7.widget.CardView>
+</LinearLayout>

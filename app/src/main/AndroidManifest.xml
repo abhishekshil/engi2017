@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.sddtu.engifest2017">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1">
+        <activity
+            android:name=".MainActivity"
+            android:label="EngiFest Infinity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EventList"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="EngiFest Infinity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme1.NoActionBar" />
+        <activity
+            android:name=".EngiActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".PlacesActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".AllEvents"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".AboutUs"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".SponsorsActivity"
+            android:label="Sponsors"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2.NoActionBar" />
+        <activity
+            android:name=".MasterEventActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".BeforeMaster"
+            android:parentActivityName=".AllEvents"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".AfterPlace"
+            android:parentActivityName=".PlacesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".DevBy"
+            android:label="Developed by : "
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme4" />
+        <activity android:name=".Doremipa"
+            android:screenOrientation="portrait"
+            ></activity>
+    </application>
+
+</manifest>
